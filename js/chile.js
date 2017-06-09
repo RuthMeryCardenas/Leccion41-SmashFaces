@@ -5,7 +5,7 @@ var mexico = [{
               image: "Andrea Miranda.JPG",
               name: "Andrea"
             },{
-              image: "Berenisse Ríos.JPG",
+              image: "Berenisse Rios.JPG",
               name: "Berenisse"
             },{
               image: "Caterina da Silva.JPG",
