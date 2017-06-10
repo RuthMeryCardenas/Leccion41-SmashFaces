@@ -1,24 +1,30 @@
 body {
   background-color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  /*font-family: 'Rokkitt', serif;*/
 }
 /*UTILITARIOS*/
-.main-container {
-
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
 }
-#game {
-
+.font-rokkitt {
+  font-family: 'Rokkitt', serif;
+  font-size: 1rem;
 }
+/*SEDE*/
 .seat {
-  background-color: red;
-  height: 100px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.browser-default {
+  background-color: #CCCCCC;
+  border: 0;
+  border-radius: 0;
+  height: 2rem;
 }
 .photo {
   background-color: blue;
-  height: 50px;
+  height: 150px;
 }
 .to-play {
   background-color: green;
-  height: 50px;
+  height: 150px;
 }
