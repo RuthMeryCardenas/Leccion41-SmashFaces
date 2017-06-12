@@ -52,8 +52,8 @@ body {
 .to-play{
   height: 100%;
 }
-.photo,
-.to-play{
+.photo{
+  background-color: grey;
   overflow: hidden;
 }
 .photo img{
