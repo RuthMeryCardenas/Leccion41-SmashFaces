@@ -5,20 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rokkitt" rel="stylesheet">
-  <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Smash Faces</title>
 </head>
 <body>
-  <div class="main-container">
+  <div id="main-container">
     <header></header>
     <div id="game" class="container">
-      <div class="row seat font-rokkitt">
-        <div class="col s3 m3 l3">
+      <div class="row font-rokkitt">
+        <div class="col l6 seat">
           <span>Elige tu sede: </span>
-        </div>
-        <div class="col s3 m3 l3 font-roboto">
-          <select class="browser-default">
+          <select>
             <option value="" hidden=""></option>
             <option value="lima">Lima</option>
             <option value="arequipa">Arequipa</option>
@@ -26,20 +23,23 @@
             <option value="mexico">México</option>
           </select>
         </div>
-        <div class="col s6 m6 l6 right-align">
+        <div class="col l6 score">
           <span>Puntos: </span>
           <span>0</span>
           <span> puntos</span>
         </div>
       </div>
       <div class="row">
-        <div class="col s5 m5 l5 photo"></div>
-        <div class="col s7 m7 l7 to-play"></div>
+        <div class="col l6 photo"></div>
+        <div class="col l6 to-play grey-darken-5">
+          <label for="">Ingresa su nombre:</label>
+          <input type="text" value="" placeholder="Nombre">
+          <button type="button" name="button" class="bg-gold">COMPROBAR</button>
+        </div>
       </div>
     </div>
   </div>
   <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/peru.js"></script>
   <script type="text/javascript" src="js/chile.js"></script>
   <script type="text/javascript" src="js/mexico.js"></script>
