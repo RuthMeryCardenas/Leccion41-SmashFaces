@@ -22,11 +22,3 @@ var generate_random_numbers = function (array) {
   }
   return aux_arr;
 }
-var load_random_photos = function (current_coder, answer) {
-  console.log(current_coder.name);
-  if (answer == current_coder.name) {
-    console.log("ok");
-  }else {
-    console.log("sigue intentando");
-  }
-}

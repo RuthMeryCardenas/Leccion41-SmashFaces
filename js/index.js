@@ -21,10 +21,22 @@ $(document).ready(function () {
     switch (current_seat) {
       case "lima":
         var random_numbers = generate_random_numbers(coders.lima);
-        var accountant = 0;
-        var current_coder = coders.lima[random_numbers[accountant]];
+        var accountant = 5;
+        var index = 0;
+        var current_coder = coders.lima[random_numbers[index]];
+        var message = $(".to-play .message");
         Photo_coder(current_seat, current_coder.image);
-        $(".to-play button").on("click", load_random_photos (current_coder, $(".to-play input").val()));
+        $(".to-play button").on("click", function () {
+          var answer = $(".to-play input").val();
+          if (answer == current_coder.name) {
+            message.css("display", "block");
+            message.text("Muy bien!!");
+          }else {
+            accountant -= 1;
+            message.css("display", "block");
+            message.text("Te quedan:"+ accountant +" intentos");
+          }
+        });
         break;
       case "arequipa":
         console.log("no data");

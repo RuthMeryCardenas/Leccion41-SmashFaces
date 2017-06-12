@@ -74,6 +74,9 @@ body {
   margin: 1rem 0;
   padding: 0.5rem;
 }
+.to-play .message {
+  display: none;
+}
 @media (min-width: 1200px) {
   .container {
     margin: auto;
